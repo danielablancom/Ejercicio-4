@@ -1,27 +1,27 @@
 //***** Números del 1 al 100 ******//
 
-function countingNumbers(number) {
+function conteoNumeros(numero) {
 
-    if (number === 101) {
+    if (numero === 101) {
         return;
     }
-    console.log(number);
-    return countingNumbers(number + 1);
+    console.log(numero);
+    return conteoNumeros(numero + 1);
 };
-countingNumbers(1); 
+conteoNumeros(1);
 
 
 //***** Números del 1000 al 500  ******//
 
-function countingNumbersBack(numb) {
+function conteoNumerosAtras(numb) {
 
     if (numb === 498) {
         return;
     }
     console.log(numb);
-    return countingNumbersBack(numb - 2);
+    return conteoNumerosAtras(numb - 2);
 };
-countingNumbersBack(1000); 
+conteoNumerosAtras(1000);
 
 
 //***** Promedio de notas ******//
@@ -35,14 +35,14 @@ function suma(notas) {
 }
 
 const notas = [6, 8, 9, 2, 5, 10];
-let sumaTotalNotas = suma(notas); 
-suma(notas); 
+let sumaTotalNotas = suma(notas);
+suma(notas);
 
-function promedio(sumaNotas){
-let promedioTotalNotas = sumaNotas / notas.length; 
+function promedio(sumaNotas) {
+    let promedioTotalNotas = sumaNotas / notas.length;
 
-return promedioTotalNotas; 
+    return promedioTotalNotas;
 
 }
-console.log("Promedio de notas", promedio(sumaTotalNotas)); 
+console.log("Promedio de notas", promedio(sumaTotalNotas));
 // console.log("promedio", promedio(suma(notas)))
